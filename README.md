@@ -22,7 +22,7 @@ ArchiveAide has several requirements that must be installed for the program to f
 * [Python 3.8+](https://www.python.org/downloads/)
 * [Tesseract-OCR 5.x](https://github.com/UB-Mannheim/tesseract/wiki)
 * [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) and [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) or [Standalone Microsoft Visual C++ Compiler](https://gist.github.com/mmozeiko/7f3162ec2988e81e56d5c4e22cde9977#file-portable-msvc-py)
-* [Python Packages in Requirements.txt]
+* [Python Packages in Requirements.txt](requirements.txt)
 
 Further, please note that Python and Tesseract must be added to your system's PATH, and if using the Standalone C++ Compiler, the extra files `libomp140.x86_64.dll` and `vcomp140.dll` must be added to your `C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\lib` folder. 
 
