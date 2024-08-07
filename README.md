@@ -120,7 +120,7 @@ Run the `RUN_ArchiveAide.bat` file, and enter one of the Config Options. The fou
 
 The output of ArchiveAide will be in `./ArchiveAide/out`
 
-*Note: For Reading & Copying Data from PDFs directly, some programs (such as chrome's integrated PDF reader) are unsuccessful. Please use [Adobe's Free PDF Reader](https://get.adobe.com/reader/)
+*Note: For Reading & Copying Data from PDFs directly, some programs (such as chrome's integrated PDF reader) are unsuccessful. Please use [Adobe's Free PDF Reader](https://get.adobe.com/reader/)*
 ## Tutorials
 
 [Installing ArchiveAide from the Full Install]
