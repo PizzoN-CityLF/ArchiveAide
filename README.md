@@ -1,6 +1,6 @@
 # ArchiveAide
 
-ArchiveAide is a program that is intended to massively speed up the process of converting physical documents to useful digital data. The program takes images of documents (Either just photos or scans from apps like Microsoft365 or iOS Notes), and a sorting configuration file, and creates a sorted file tree that includes PDFs of the images with 99+% Accurate backing text and AI-generated summaries of the data in those documents. 
+ArchiveAide is a program that is intended to massively speed up the process of converting physical documents to useful digital data. The program takes images of documents (Either just photos or scans from apps like Microsoft365 or iOS Notes), and a sorting configuration file, and creates a sorted file tree that includes PDFs of the images with 99+% Accurate backing text and AI-generated summaries of the data in those documents. This repository contains the code for **ArchiveAide**, which is responsible for all image processing of the project, and **ConfigWriter**, a program designed to create the configuration files that are used by ArchiveAide.
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ ArchiveAide is a program that is intended to massively speed up the process of c
 
 ## History
 
-ArchiveAide and ConfigWriter were designed and developed by Nicholas Pizzo, an intern at the City Clerk's officer of the City of Lake Forest, Illinois, during the summer of 2024. The tools were designed to aid with the scanning and post-scanning usage of the tens of thousands of one-of-a-kind physical documents in the archives of the Lake Forest City Hall. Further thanks are required to City Clerk Margaret Boyer and Assistant City Manager George Issakoo for their support during the project's creation.
+ArchiveAide and ConfigWriter were designed and developed by Nicholas Pizzo, an intern at the City Clerk's officer of the City of Lake Forest, Illinois, during the summer of 2024. The tools were designed to aid with the scanning and post-scanning usage of the tens of thousands of one-of-a-kind physical documents in the archives of the Lake Forest City Hall. Further thanks are required to City Clerk Margaret Boyer and Assistant City Manager George Issakoo for their support during the project's development.
 
 ## Installation 
 
@@ -56,7 +56,7 @@ Global Keywords edit which primary data structure the next 'Local' item will be 
    * `Part` - Moves to the next "Part". The Part is the optional tertiary data structure of ArchiveAide. Parts do not change the tree structure, and are only extra data that can be used in other applications.
    * `End` - Ends the file. This is not automatically placed, and must be added by the user.
 
-*Note:* All files should begin with `Box Folder` to ensure that the program is placing the first item into a Box and a Folder.
+*Note:* All files should begin with `Box Folder` to ensure that the program is placing the first item into a Box and a Folder. If beginning in a part, `Box Folder Part` should open the file.
 
 All files also have a local string, which is in the format:
 `1 2 ... n-1 n Date #[#] #[#] #### [To ####]`, where n is the number of pages of that file.
@@ -97,9 +97,28 @@ Box 2
     Item 2.1.1 (Pages Number: 2 Date: 8/9/1888)
  ```
 
+Once you have created your file, export it by going to Export Menu > "Open Export Dialogue".
+
+Enter the number of the first box, folder, part, and item you scanned documents into.
+
+Click "Save Settings and See Config Out", ensure that the result printed on the next page is correct, and click "Save in the IN folder of ArchiveAide"
+
+Select the "in" folder of ArchiveAide in the file menu.
+
 ## ArchiveAide Usage
 
 There is also a video tutorial for ArchiveAide in the [Tutorials](#tutorials) tab
+
+Usage of ArchiveAide is relatively simple. Drag all images that were scanned into the ArchiveAide/in/photos folder. **Ensure they are in "Alphabetical Order"** (This will most likely already be the case depending on how you scanned the documents). Create the configuration .csv file from ConfigWriter and ensure that it is with the filename `./ArchiveAide/in/config/.csv`
+
+Run the `RUN_ArchiveAide.bat` file, and enter one of the Config Options. The four options are:
+     * `sort` - Which only creates the sorted file tree from config
+     * `ocr` - Which only creates the sortable PDF documents from images
+     * `summarize` - Which only creates the AI-Generated document summaries
+     * `all` - Which does all three.
+ **NOTE: Do NOT run OCR without running sort first, Do NOT run Summarize without running Sort and OCR First**
+
+The output of ArchiveAide will be in `./ArchiveAide/out`
 
 ## Tutorials
 
