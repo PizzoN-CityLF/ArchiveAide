@@ -26,11 +26,11 @@ ArchiveAide has several requirements that must be installed for the program to f
 
 Further, please note that Python and Tesseract must be added to your system's PATH, and if using the Standalone C++ Compiler, the extra files `libomp140.x86_64.dll` and `vcomp140.dll` must be added to your `C:\Users\%USERNAME%\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\lib` folder. 
 
-ArchiveAide itself can be downloaded from the repository directly
+ArchiveAide itself can be downloaded from the [Releases Page of this Repository](https://github.com/PizzoN-CityLF/ArchiveAide/releases)
 
-**ArchiveAide.zip** includes both ConfigWriter and ArchiveAide, as well as .bat files to run the programs. To download, go to the releases tab and choose the most recent version.
+**ArchiveAide.zip** includes both ConfigWriter and ArchiveAide, as well as .bat files to run the programs. 
 
-**ArchiveAideFullInstall.zip** includes ConfigWriter, ArchiveAide, .bat files to run the programs, .exe files for all necessary dependencies, the standalone compiler, and a .bat file to set up the compiler and packages without further input. To download, directly click the file in this repository's code and click the download button in the right-hand corner.
+**ArchiveAideFullInstall.zip** includes ConfigWriter, ArchiveAide, .bat files to run the programs, .exe files for all necessary dependencies, the standalone compiler, and a .bat file to set up the compiler and packages without further input.
 
 The following are instructions for the installation process using the FullInstall.zip file. These Instructions are also followed in the [Tutorial Video](#tutorials)
 
