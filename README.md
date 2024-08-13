@@ -127,11 +127,11 @@ The output of ArchiveAide will be in `./ArchiveAide/out`
 *Note: For Reading & Copying Data from PDFs directly, some programs (such as chrome's integrated PDF reader) are unsuccessful. Please use [Adobe's Free PDF Reader](https://get.adobe.com/reader/)*
 ## Tutorials
 
-[Installing ArchiveAide from the Full Install]
+[Installing ArchiveAide from the Full Install](https://www.youtube.com/watch?v=esT6Iusfyt4&list=PLcHi1xBtYO41KcSRRkhcMVMRVll2K38oX&index=4)
 
-[Using ConfigWriter]
+[Using ConfigWriter](https://www.youtube.com/watch?v=JN6sA_W4IRg&list=PLcHi1xBtYO41KcSRRkhcMVMRVll2K38oX&index=3)
 
-[Using ArchiveAide]
+[Using ArchiveAide](https://www.youtube.com/watch?v=F4QdowoRlWY&list=PLcHi1xBtYO41KcSRRkhcMVMRVll2K38oX&index=3)
 
 ## Support
 
